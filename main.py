@@ -19,8 +19,10 @@ def main():
         scelta = menu()
 
         if scelta == "1":
+            # aggiorno il responsabile nel sistema deposito
             nuovo_responsabile = input("Inserisci il nuovo responsabile: ")
-            # TODO: Aggiorna responsabile nel sistema
+            deposito.responsabile= nuovo_responsabile            # lo faccio grazie al setter definito in DepositoStrumenti
+            print(f"Nuovo responsabile: {nuovo_responsabile}")
 
         elif scelta == "2":
             while True:
